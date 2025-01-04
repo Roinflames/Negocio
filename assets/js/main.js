@@ -239,20 +239,24 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  /**
+   * Agregar datos json
+   */  
   fetch('assets/js/data.json')
     .then((response) => response.json())
     .then((data) => {
+
       const categories = {
         interior: document.querySelector("#tienda-interior .row"),
         exterior: document.querySelector("#tienda-exterior .row"),
         arboles: document.querySelector("#tienda-arboles .row"),
         suculentas: document.querySelector("#tienda-suculentas .row"),
       };
-      console.log(categories)
+
       data.plantas.forEach((plant) => {
         const plantItem = `
             <div class="col-lg-4 tienda-item">
-              <a href="${plant.image}" class="glightbox">
+              <a href="${plant.image}" class="glightbox" data-gallery="tienda-gallery">
                 <img src="${plant.image}" class="menu-img img-fluid" alt="${plant.nombre_común}">
               </a>
               <h4>${plant.nombre_común}</h4>
@@ -264,6 +268,30 @@ document.addEventListener('DOMContentLoaded', () => {
           categories[plant.categoría].insertAdjacentHTML("beforeend", plantItem);
         }
       });
+
     })
     .catch((error) => console.error("Error loading plants data:", error));
+
+  /*
+   * FIX Ocultar secciones vacías 
+   */
+  // Selecciona todos los elementos <li> con la clase 'nav-item'
+  // const navItems = document.querySelectorAll('.nav-item');
+  
+  // // Recorre todos los elementos de la lista
+  // navItems.forEach(function(navItem) {
+  //     // Selecciona el <a> dentro de cada <li>
+  //     const link = navItem.querySelector('a.nav-link');
+  //     console.log(link);
+      
+  //     // Si el <a> tiene menos de un nodo hijo, oculta el <li> correspondiente
+  //     if (link && link.childNodes.length < 1) {
+  //         navItem.style.display = 'none';
+  //     }
+  // });
+  /*
+   * 
+   */
+
+
 });

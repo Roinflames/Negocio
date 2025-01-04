@@ -39,7 +39,7 @@ class Plantiwui {
     getAll() {
         fetch('./assets/js/data.json')
             .then((response) => response.json())
-            .then((json) => console.log(json));
+            .then((json) => {return});
     }
 }
 
