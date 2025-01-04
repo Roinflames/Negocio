@@ -1,0 +1,137 @@
+{
+    "título": "Ficha Técnica de Plantas - Plantiwuis 🌱",
+    "plantas": [
+        {
+            "id": 1,
+            "image": "assets/img/suculentas/Bejequillo Menudo.png",
+            "nombre_común": "Bejequillo Menudo",
+            "nombre_científico": "Crassula ovata",
+            "origen": "Sudáfrica y Mozambique",
+            "tamaño": {
+                "altura": "Hasta 1 metro",
+                "diámetro": "Hasta 1 metro"
+            },
+            "luz_requerida": "Luz indirecta brillante o sol directo moderado",
+            "riego": {
+                "frecuencia": "Cada 2 semanas en primavera/verano, mensual en otoño/invierno",
+                "método": "Regar cuando el sustrato esté completamente seco"
+            },
+            "sustrato_ideal": "Mezcla para suculentas o cactus con buen drenaje",
+            "temperatura_ideal": [
+                "Entre 15°C y 24°C",
+                "No tolera heladas"
+            ],
+            "fertilización": "Fertilizante líquido para suculentas, una vez al mes en primavera/verano",
+            "beneficios": [
+                "Mejora la calidad del aire",
+                "Atrae buena energía según el Feng Shui"
+            ],
+            "cuidado_especial": [
+                "Evitar exceso de agua para prevenir pudrición de raíces",
+                "Retirar hojas secas para estimular nuevo crecimiento"
+            ],
+            "precio_venta_maceta": "$9.990 CLP",
+            "precio_venta_sin_maceta": "$7.990 CLP",
+            "categoría": "suculentas"
+        },
+        {
+            "id": 2,
+            "image": "assets/img/suculentas/Cotyledon Tomentosa.png",
+            "nombre_común": "Cotyledon Tomentosa",
+            "nombre_científico": "Cotyledon tomentosa",
+            "origen": "Sudáfrica",
+            "tamaño": {
+                "altura": "Hasta 30 cm",
+                "diámetro": "Hasta 40 cm"
+            },
+            "luz_requerida": "Luz indirecta brillante o sol directo moderado",
+            "riego": {
+                "frecuencia": "Cada 2 semanas en primavera/verano, mensual en otoño/invierno",
+                "método": "Regar cuando el sustrato esté completamente seco"
+            },
+            "sustrato_ideal": "Mezcla para suculentas o cactus con buen drenaje",
+            "temperatura_ideal": [
+                "Entre 15°C y 24°C",
+                "No tolera heladas"
+            ],
+            "fertilización": "Fertilizante líquido para suculentas, una vez al mes en primavera/verano",
+            "beneficios": [
+                "Mejora la calidad del aire",
+                "Ideal para interiores soleados"
+            ],
+            "cuidado_especial": [
+                "Evitar exceso de agua para prevenir pudrición de raíces",
+                "Retirar hojas secas para estimular nuevo crecimiento"
+            ],
+            "precio_venta_maceta": "$10.990 CLP",
+            "precio_venta_sin_maceta": "$8.990 CLP",
+            "categoría": "suculentas"
+        },
+        {
+            "id": 3,
+            "image": "assets/img/suculentas/Ladyfingers Crassula Ovata.png",
+            "nombre_común": "Ladyfingers Crassula Ovata",
+            "nombre_científico": "Crassula ovata",
+            "origen": "Sudáfrica y Mozambique",
+            "tamaño": {
+                "altura": "Hasta 1 metro",
+                "diámetro": "Hasta 1 metro"
+            },
+            "luz_requerida": "Luz indirecta brillante o sol directo moderado",
+            "riego": {
+                "frecuencia": "Cada 2 semanas en primavera/verano, mensual en otoño/invierno",
+                "método": "Regar cuando el sustrato esté completamente seco"
+            },
+            "sustrato_ideal": "Mezcla para suculentas o cactus con buen drenaje",
+            "temperatura_ideal": [
+                "Entre 15°C y 24°C",
+                "No tolera heladas"
+            ],
+            "fertilización": "Fertilizante líquido para suculentas, una vez al mes en primavera/verano",
+            "beneficios": [
+                "Mejora la calidad del aire",
+                "Atrae buena energía según el Feng Shui"
+            ],
+            "cuidado_especial": [
+                "Evitar exceso de agua para prevenir pudrición de raíces",
+                "Retirar hojas secas para estimular nuevo crecimiento"
+            ],
+            "precio_venta_maceta": "$11.990 CLP",
+            "precio_venta_sin_maceta": "$9.990 CLP",
+            "categoría": "suculentas"
+        },
+        {
+            "id": 4,
+            "image": "assets/img/suculentas/Sedeveria Harry.png",
+            "nombre_común": "Sedeveria Harry",
+            "nombre_científico": "Sedeveria Harry",
+            "origen": "Híbrido de Sedum y Echeveria",
+            "tamaño": {
+                "altura": "Hasta 30 cm",
+                "diámetro": "Hasta 30 cm"
+            },
+            "luz_requerida": "Luz indirecta brillante o sol directo moderado",
+            "riego": {
+                "frecuencia": "Cada 2 semanas en primavera/verano, mensual en otoño/invierno",
+                "método": "Regar cuando el sustrato esté completamente seco"
+            },
+            "sustrato_ideal": "Mezcla para suculentas o cactus con buen drenaje",
+            "temperatura_ideal": [
+                "Entre 15°C y 24°C",
+                "No tolera heladas"
+            ],
+            "fertilización": "Fertilizante líquido para suculentas, una vez al mes en primavera/verano",
+            "beneficios": [
+                "Mejora la calidad del aire",
+                "Ideal para interiores soleados"
+            ],
+            "cuidado_especial": [
+                "Evitar exceso de agua para prevenir pudrición de raíces",
+                "Retirar hojas secas para estimular nuevo crecimiento"
+            ],
+            "precio_venta_maceta": "$12.990 CLP",
+            "precio_venta_sin_maceta": "$10.990 CLP",
+            "categoría": "suculentas"
+        }
+    ]
+}
