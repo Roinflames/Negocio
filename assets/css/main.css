@@ -641,6 +641,7 @@ section {
 .about .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
+  font-size: 20px;
 }
 
 .about .content ul i {
@@ -651,10 +652,13 @@ section {
   color: var(--color-primary);
 }
 
+.  font-size: 20px;
+
+}
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Why Us Section
