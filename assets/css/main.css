@@ -17,11 +17,14 @@
   --font-secondary: "Inter", sans-serif;
 }
 
-/* Colors */
+/* 
+Colors 
+*/
 :root {
-  --color-default: #212529;
-  --color-primary: #ce1212;
-  --color-secondary: #37373f;
+  --color-default: #FFA8D3;
+  --color-primary: #FF2994;
+  --color-secondary: #FF69B4;
+  --white: #FFFFFF;
 }
 
 /* Smooth scroll behavior */
@@ -57,7 +60,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Sections & Section Header
+# Sections & Header
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
@@ -305,11 +308,11 @@ section {
 # Header ROSADO v1
 --------------------------------------------------------------*/
 .header {
-  background: #fff;
+  background: var(--color-secondary);
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #ff69b4; 
+  border-bottom: 1px solid var(--color-primary);
 }
 
 @media (max-width: 575px) {
@@ -319,7 +322,7 @@ section {
 }
 
 .header.sticked {
-  border-color: #ff69b4; 
+  border-color: var(--color-secondary);
 }
 
 .header .logo img {
@@ -330,20 +333,20 @@ section {
 .header .logo h1 {
   font-size: 28px;
   font-weight: 700;
-  color: #ff1493; 
+  color: var(--white);
   margin: 0;
   font-family: var(--font-secondary);
 }
 
 .header .logo h1 span {
-  color: #ff69b4; 
+  color: #ff69b4;
 }
 
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
   font-size: 14px;
   color: #fff;
-  background: #ff69b4; 
+  background: #ff69b4;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
@@ -353,7 +356,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(255, 105, 180, 0.8); 
+  background: rgba(255, 105, 180, 0.8);
 }
 
 section {
@@ -431,7 +434,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #000;
+    color: var(--white);
   }
 
   .navbar .dropdown ul {
@@ -1440,7 +1443,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: #1f1f24;
+  background-color: var(--color-default);
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
 }
