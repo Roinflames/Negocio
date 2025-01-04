@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -239,4 +239,31 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  fetch('assets/js/data.json')
+    .then((response) => response.json())
+    .then((data) => {
+      const categories = {
+        interior: document.querySelector("#tienda-interior .row"),
+        exterior: document.querySelector("#tienda-exterior .row"),
+        arboles: document.querySelector("#tienda-arboles .row"),
+        suculentas: document.querySelector("#tienda-suculentas .row"),
+      };
+      console.log(categories)
+      data.plantas.forEach((plant) => {
+        const plantItem = `
+            <div class="col-lg-4 tienda-item">
+              <a href="${plant.image}" class="glightbox">
+                <img src="${plant.image}" class="menu-img img-fluid" alt="${plant.nombre_común}">
+              </a>
+              <h4>${plant.nombre_común}</h4>
+              <p class="detalle">${plant.nombre_científico}</p>
+              <p class="price">${plant.precio_venta_maceta}</p>
+            </div>
+          `;
+        if (categories[plant.categoría]) {
+          categories[plant.categoría].insertAdjacentHTML("beforeend", plantItem);
+        }
+      });
+    })
+    .catch((error) => console.error("Error loading plants data:", error));
 });

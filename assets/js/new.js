@@ -36,11 +36,17 @@ class Plantiwui {
     getprecio() {
         return this.precio;
     }
+    getAll() {
+        fetch('./assets/js/data.json')
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+    }
 }
 
 tiendaitem = (document.getElementsByClassName("tienda-item"))
 
 const plantiwui = new Plantiwui();
+plantiwui.getAll()
 
 for (let index = 0; index < tiendaitem.length; index++) {
     plantiwui.setValores(
